@@ -1,0 +1,22 @@
+.piePagina{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: $background-principal;
+    font-family: $font-family;
+    margin-left:0px;
+    margin-bottom:0px;
+    height: 180px;
+    width:100%;
+    .rrss{
+        @include propiedades-flex (row, space-around, center)
+    }
+    .datos{
+        color: $color-fuente;
+        padding: 20px;
+    }
+} 
+.piePagina nav a{
+    text-decoration: none;
+    color: $color-fuente;
+}

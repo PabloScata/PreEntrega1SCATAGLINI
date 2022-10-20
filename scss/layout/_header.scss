@@ -1,0 +1,33 @@
+.menuNav {
+    background-color: $background-principal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.listaMenu {
+    list-style: none;
+    font-family: $font-family;
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    align-items: center;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: $color-fuente;
+        }
+    }
+}
+
+.logo{
+    width: 100px;
+    transition: all 0.3s;
+    margin-left: 2em;
+    .logo:hover{
+        transform: scale(1.2, 1.2);
+        color: #4e433d;
+    }
+}

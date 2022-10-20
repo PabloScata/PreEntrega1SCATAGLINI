@@ -1,0 +1,17 @@
+.nosotros-main{
+    background-color: #958e8b;
+    height: 800px;
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            margin: 1em;
+            font-family: $font-family;
+        }
+        p{
+            margin-left: 1em;
+            font-family: $font-family;
+        }
+    }
+}

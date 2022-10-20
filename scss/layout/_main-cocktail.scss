@@ -1,0 +1,59 @@
+.container-fondo{
+    background-color: #958e8b;
+}
+
+.container-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5em 20em 22em;
+    grid-template-areas:
+    "titulo titulo titulo "
+    "container-foto1 trago1  ."
+    ". trago2  container-foto2"
+    ;
+}
+.titulo{
+    @include propiedades-grid1(titulo, center)
+}
+.container-foto1{
+    @include propiedades-grid2(auto, container-foto1)
+}
+.trago1{
+    @include propiedades-grid1(trago1, center)
+}
+.container-foto2{
+    @include propiedades-grid2(auto, container-foto2)
+}
+.trago2{
+    @include propiedades-grid1(trago2, center)
+}
+.coctel{
+    width: 200px;
+    border-radius: 0.7em;
+}
+/*tablet*/
+@media (max-width: 768px){
+    
+    .container-main{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:
+        "titulo titulo titulo "
+        "container-foto1 trago1  ."
+        ". trago2  container-foto2"
+        ;
+    }
+} 
+/*celular*/
+@media (max-width: 576px){
+    
+    .container-main{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+        "titulo"
+        "container-foto1"
+        "trago1"
+        "container-foto2"
+        "trago2"
+        ;
+    }
+} 

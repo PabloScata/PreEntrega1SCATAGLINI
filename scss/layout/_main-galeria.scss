@@ -1,0 +1,19 @@
+.galeria-main{
+    background-color: #958e8b;
+    .tituloGin{
+        font-family: $font-family;
+        display: flex;
+        justify-content: center;
+    }
+    .flex-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        .foto{
+            width: 15em;
+            border-radius: 0.7em;
+            box-shadow: 0.2em 0.2em 1em 0.2em #362a24;
+            margin: 1em;
+        }
+    }
+}

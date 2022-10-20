@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Caudex", "docktrin";
+  src: url(../asses/BRANDING/Fuentes/Caudex-Regular.ttf), url(../asses/BRANDING/Fuentes/docktrin.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.piePagina {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background-color: #432616be;
+  font-family: "Caudex";
+  margin-left: 0px;
+  margin-bottom: 0px;
+  height: 180px;
+  width: 100%; }
+  .piePagina .rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px; }
+  .piePagina .datos {
+    color: white;
+    padding: 20px; }
+
+.piePagina nav a {
+  text-decoration: none;
+  color: white; }
+
+.menuNav {
+  background-color: #432616be;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px; }
+
+.listaMenu {
+  list-style: none;
+  font-family: "Caudex";
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  align-items: center; }
+  .listaMenu li {
+    list-style: none; }
+    .listaMenu li a {
+      text-decoration: none;
+      color: white; }
+
+.logo {
+  width: 100px;
+  transition: all 0.3s;
+  margin-left: 2em; }
+  .logo .logo:hover {
+    transform: scale(1.2, 1.2);
+    color: #4e433d; }
+
+.fondo {
+  background-image: url("../asses/img/DSC_3167.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Caudex";
+  text-align: center;
+  height: 800px; }
+  .fondo .slogan {
+    padding: 180px;
+    color: white;
+    font-family: "Caudex"; }
+  .fondo .london {
+    padding: 10px;
+    color: white;
+    font-family: "Caudex"; }
+  .fondo .sabores {
+    padding: 2px;
+    color: white;
+    font-family: "Caudex"; }
+
+.container-fondo {
+  background-color: #958e8b; }
+
+.container-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5em 20em 22em;
+  grid-template-areas: "titulo titulo titulo " "container-foto1 trago1  ." ". trago2  container-foto2"; }
+
+.titulo {
+  font-family: "Caudex";
+  grid-area: titulo;
+  text-align: center;
+  margin: auto; }
+
+.container-foto1 {
+  margin: auto;
+  grid-area: container-foto1; }
+
+.trago1 {
+  font-family: "Caudex";
+  grid-area: trago1;
+  text-align: center;
+  margin: auto; }
+
+.container-foto2 {
+  margin: auto;
+  grid-area: container-foto2; }
+
+.trago2 {
+  font-family: "Caudex";
+  grid-area: trago2;
+  text-align: center;
+  margin: auto; }
+
+.coctel {
+  width: 200px;
+  border-radius: 0.7em; }
+
+/*tablet*/
+@media (max-width: 768px) {
+  .container-main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "titulo titulo titulo " "container-foto1 trago1  ." ". trago2  container-foto2"; } }
+
+/*celular*/
+@media (max-width: 576px) {
+  .container-main {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "titulo" "container-foto1" "trago1" "container-foto2" "trago2"; } }
+
+.contacto-main {
+  background-color: #958e8b;
+  display: flex;
+  justify-content: space-evenly;
+  height: 600px; }
+  .contacto-main .formulario {
+    width: 400px;
+    background-color: #432616be;
+    padding: 30px;
+    margin: 100px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Caudex";
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.486); }
+    .contacto-main .formulario .controls {
+      width: 100%;
+      padding: 6px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid black;
+      font-family: "Caudex";
+      text-align: center;
+      font-size: 13px; }
+  .contacto-main .boton-formulario {
+    width: 100%;
+    background-color: #878b8a;
+    border-radius: 4px;
+    padding: 6px;
+    color: white;
+    font-size: 16px; }
+  .contacto-main .ubicación {
+    color: white;
+    text-align: center;
+    margin: 50px;
+    width: 20em;
+    height: 20em;
+    font-family: "Caudex"; }
+  .contacto-main input {
+    display: block; }
+
+.galeria-main {
+  background-color: #958e8b; }
+  .galeria-main .tituloGin {
+    font-family: "Caudex";
+    display: flex;
+    justify-content: center; }
+  .galeria-main .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .galeria-main .flex-container .foto {
+      width: 15em;
+      border-radius: 0.7em;
+      box-shadow: 0.2em 0.2em 1em 0.2em #362a24;
+      margin: 1em; }
+
+.nosotros-main {
+  background-color: #958e8b;
+  height: 800px; }
+  .nosotros-main div {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .nosotros-main div h1 {
+      margin: 1em;
+      font-family: "Caudex"; }
+    .nosotros-main div p {
+      margin-left: 1em;
+      font-family: "Caudex"; }

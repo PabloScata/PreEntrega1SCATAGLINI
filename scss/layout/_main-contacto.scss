@@ -1,0 +1,47 @@
+.contacto-main{
+    background-color: #958e8b;
+    display: flex;
+    justify-content: space-evenly;
+    height: 600px;
+    .formulario{
+        width: 400px;
+        background-color: $background-principal;
+        padding: 30px;
+        margin: 100px;
+        margin-top: 50px;
+        text-align: center;
+        color: $color-fuente;
+        font-family: $font-family;
+        border-radius: 5px;
+        box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.486);
+        .controls{
+            width: 100%;
+            padding: 6px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid black;
+            font-family: $font-family;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+    .boton-formulario{
+        width: 100%;
+        background-color: rgb(135, 139, 138);
+        border-radius: 4px;
+        padding: 6px;
+        color: white;
+        font-size: 16px;
+    }
+    .ubicación{
+    color: $color-fuente;
+    text-align: center;
+    margin: 50px;
+    width: 20em;
+    height: 20em;
+    font-family: $font-family;
+    }
+    input{
+        display: block;
+    }
+}
