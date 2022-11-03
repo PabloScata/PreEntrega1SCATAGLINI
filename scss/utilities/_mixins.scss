@@ -24,3 +24,8 @@
     color: $color;
     font-family: $font;
 }
+@mixin media() {
+    @media screen and (max-width:480px){
+        @content 
+    }
+}

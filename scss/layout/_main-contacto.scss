@@ -1,7 +1,7 @@
 .contacto-main{
-    background-color: #958e8b;
+    background-color: $background-secundario;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 600px;
     .formulario{
         width: 400px;
@@ -13,7 +13,6 @@
         color: $color-fuente;
         font-family: $font-family;
         border-radius: 5px;
-        box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.486);
         .controls{
             width: 100%;
             padding: 6px;
@@ -27,19 +26,11 @@
     }
     .boton-formulario{
         width: 100%;
-        background-color: rgb(135, 139, 138);
+        background-color: rgb(0, 0, 0);
         border-radius: 4px;
         padding: 6px;
         color: white;
         font-size: 16px;
-    }
-    .ubicación{
-    color: $color-fuente;
-    text-align: center;
-    margin: 50px;
-    width: 20em;
-    height: 20em;
-    font-family: $font-family;
     }
     input{
         display: block;

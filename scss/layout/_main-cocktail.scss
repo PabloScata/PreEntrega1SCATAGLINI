@@ -1,5 +1,5 @@
 .container-fondo{
-    background-color: #958e8b;
+    background-color: $background-secundario;
 }
 
 .container-main{
@@ -10,6 +10,7 @@
     "titulo titulo titulo "
     "container-foto1 trago1  ."
     ". trago2  container-foto2"
+    "container-foto3 trago3 ."
     ;
 }
 .titulo{
@@ -27,8 +28,14 @@
 .trago2{
     @include propiedades-grid1(trago2, center)
 }
+.container-foto3{
+    @include propiedades-grid2(auto, container-foto3)
+}
+.trago3{
+    @include propiedades-grid1(trago3, center)
+}
 .coctel{
-    width: 200px;
+    width: 210px;
     border-radius: 0.7em;
 }
 /*tablet*/
@@ -40,6 +47,7 @@
         "titulo titulo titulo "
         "container-foto1 trago1  ."
         ". trago2  container-foto2"
+        "container-foto3 trago3 ."
         ;
     }
 } 
@@ -54,6 +62,8 @@
         "trago1"
         "container-foto2"
         "trago2"
+        "container-foto3"
+        "trago3"
         ;
     }
 } 

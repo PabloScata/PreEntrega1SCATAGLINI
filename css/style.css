@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Caudex", "docktrin";
   src: url(../asses/BRANDING/Fuentes/Caudex-Regular.ttf), url(../asses/BRANDING/Fuentes/docktrin.ttf); }
@@ -16,7 +15,7 @@
   font-family: "Caudex";
   margin-left: 0px;
   margin-bottom: 0px;
-  height: 180px;
+  height: 130px;
   width: 100%; }
   .piePagina .rrss {
     display: flex;
@@ -39,6 +38,14 @@
   justify-content: space-between;
   padding: 10px; }
 
+.logo {
+  width: 100px;
+  transition: all 0.3s;
+  margin-left: 20px; }
+  .logo .logo:hover {
+    transform: scale(1.2, 1.2);
+    color: #4e433d; }
+
 .listaMenu {
   list-style: none;
   font-family: "Caudex";
@@ -52,13 +59,37 @@
       text-decoration: none;
       color: white; }
 
-.logo {
-  width: 100px;
-  transition: all 0.3s;
-  margin-left: 2em; }
-  .logo .logo:hover {
-    transform: scale(1.2, 1.2);
-    color: #4e433d; }
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none; }
+
+#check {
+  display: none; }
+
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block; }
+  header nav ul {
+    position: fixed;
+    width: 100vh;
+    background: #432616be;
+    flex-direction: column;
+    top: 100px;
+    left: -100vh;
+    text-align: center;
+    transition: all 0.5s; }
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+    line-height: 30px; }
+  header nav ul li a {
+    font-size: 20px; }
+  #check:checked ~ ul {
+    left: 0; } }
 
 .fondo {
   background-image: url("../asses/img/DSC_3167.JPG");
@@ -82,13 +113,13 @@
     font-family: "Caudex"; }
 
 .container-fondo {
-  background-color: #958e8b; }
+  background-color: #bebdbbc4; }
 
 .container-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 5em 20em 22em;
-  grid-template-areas: "titulo titulo titulo " "container-foto1 trago1  ." ". trago2  container-foto2"; }
+  grid-template-areas: "titulo titulo titulo " "container-foto1 trago1  ." ". trago2  container-foto2" "container-foto3 trago3 ."; }
 
 .titulo {
   font-family: "Caudex";
@@ -116,26 +147,36 @@
   text-align: center;
   margin: auto; }
 
+.container-foto3 {
+  margin: auto;
+  grid-area: container-foto3; }
+
+.trago3 {
+  font-family: "Caudex";
+  grid-area: trago3;
+  text-align: center;
+  margin: auto; }
+
 .coctel {
-  width: 200px;
+  width: 210px;
   border-radius: 0.7em; }
 
 /*tablet*/
 @media (max-width: 768px) {
   .container-main {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "titulo titulo titulo " "container-foto1 trago1  ." ". trago2  container-foto2"; } }
+    grid-template-areas: "titulo titulo titulo " "container-foto1 trago1  ." ". trago2  container-foto2" "container-foto3 trago3 ."; } }
 
 /*celular*/
 @media (max-width: 576px) {
   .container-main {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "titulo" "container-foto1" "trago1" "container-foto2" "trago2"; } }
+    grid-template-areas: "titulo" "container-foto1" "trago1" "container-foto2" "trago2" "container-foto3" "trago3"; } }
 
 .contacto-main {
-  background-color: #958e8b;
+  background-color: #bebdbbc4;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 600px; }
   .contacto-main .formulario {
     width: 400px;
@@ -146,8 +187,7 @@
     text-align: center;
     color: white;
     font-family: "Caudex";
-    border-radius: 5px;
-    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.486); }
+    border-radius: 5px; }
     .contacto-main .formulario .controls {
       width: 100%;
       padding: 6px;
@@ -159,23 +199,16 @@
       font-size: 13px; }
   .contacto-main .boton-formulario {
     width: 100%;
-    background-color: #878b8a;
+    background-color: black;
     border-radius: 4px;
     padding: 6px;
     color: white;
     font-size: 16px; }
-  .contacto-main .ubicación {
-    color: white;
-    text-align: center;
-    margin: 50px;
-    width: 20em;
-    height: 20em;
-    font-family: "Caudex"; }
   .contacto-main input {
     display: block; }
 
 .galeria-main {
-  background-color: #958e8b; }
+  background-color: #bebdbbc4; }
   .galeria-main .tituloGin {
     font-family: "Caudex";
     display: flex;
@@ -191,7 +224,7 @@
       margin: 1em; }
 
 .nosotros-main {
-  background-color: #958e8b;
+  background-color: #bebdbbc4;
   height: 800px; }
   .nosotros-main div {
     display: flex;

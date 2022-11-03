@@ -5,6 +5,15 @@
     justify-content: space-between;
     padding: 10px;
 }
+.logo{
+    width: 100px;
+    transition: all 0.3s;
+    margin-left: 20px;
+    .logo:hover{
+        transform: scale(1.2, 1.2);
+        color: #4e433d;
+    }
+}
 
 .listaMenu {
     list-style: none;
@@ -21,13 +30,40 @@
         }
     }
 }
-
-.logo{
-    width: 100px;
-    transition: all 0.3s;
-    margin-left: 2em;
-    .logo:hover{
-        transform: scale(1.2, 1.2);
-        color: #4e433d;
+.checkbtn{
+    font-size: 30px;
+    color: $color-fuente;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 768px){
+    .checkbtn{
+        display: block;
+    }
+    header nav ul{
+        position: fixed;
+        width: 100vh;
+        background: $background-principal;
+        flex-direction: column;
+        top: 100px;
+        left: -100vh;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    header nav ul li{
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    header nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left:0;
     }
 }

@@ -6,16 +6,17 @@
     font-family: $font-family;
     margin-left:0px;
     margin-bottom:0px;
-    height: 180px;
+    height: 130px;
     width:100%;
     .rrss{
-        @include propiedades-flex (row, space-around, center)
+        @include propiedades-flex (row, space-around, center);
     }
     .datos{
         color: $color-fuente;
         padding: 20px;
     }
 } 
+
 .piePagina nav a{
     text-decoration: none;
     color: $color-fuente;
