@@ -177,13 +177,13 @@
   background-color: #bebdbbc4;
   display: flex;
   justify-content: center;
-  height: 600px; }
+  height: 800px; }
   .contacto-main .formulario {
     width: 400px;
+    height: 500px;
     background-color: #432616be;
     padding: 30px;
-    margin: 100px;
-    margin-top: 50px;
+    margin-top: 150px;
     text-align: center;
     color: white;
     font-family: "Caudex";

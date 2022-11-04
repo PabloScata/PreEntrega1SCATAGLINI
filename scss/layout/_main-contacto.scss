@@ -2,13 +2,13 @@
     background-color: $background-secundario;
     display: flex;
     justify-content: center;
-    height: 600px;
+    height: 800px;
     .formulario{
         width: 400px;
+        height: 500px;
         background-color: $background-principal;
         padding: 30px;
-        margin: 100px;
-        margin-top: 50px;
+        margin-top: 150px;
         text-align: center;
         color: $color-fuente;
         font-family: $font-family;
