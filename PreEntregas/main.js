@@ -17,7 +17,7 @@ while (bebida != "ESC"){
     bebida = prompt("¿Cuantos Gines Forajido?");
 } */
 
-/*     PRE-ENTREGA 2     -  No se como unir lo anterior con lo nuevo */
+/*     PRE-ENTREGA 2     */
 
 /* function Botella (info){
     this.nombre = info.nombre;
@@ -61,13 +61,27 @@ console.log(productos.some(marca => marca.nombre === "El bosque"));
 console.log(productos.some(marca => marca.nombre === "Aconcagua"));
 console.log(productos.some(marca => marca.nombre === "Hilbing"));
 
-let bebida = parseInt(prompt("¿Que Gin le gustaria comprar?"));
-let encontrado = productos.some((marca) => marca.nombre === gin);
+let bebida = prompt("¿Que Gin le gustaria comprar?");
+let encontrado = productos.some((marca) => marca.nombre === bebida);
 
 if (encontrado){
-    alert(`El gin ${gin} se encuentra en stock`)
+    alert(`El Gin ${bebida} se encuentra en stock`)
 }else {
-    alert(`El Gin ${gin} no se encuentra en stock`)
+    alert(`El Gin ${bebida} no se encuentra en stock`)
 }
+
+function multiplicar(bebida){
+    return bebida * 1800;
+}
+while (bebida != "ESC"){
+    if (bebida <=25){
+        let resultado=multiplicar(bebida)
+        console.log(resultado)
+        let mensaje = `Su carrito es $ ${resultado}`;
+        alert(mensaje);
+}
+    bebida = prompt("¿Cuantos gines deseas comprar?");
+}
+
 
 
